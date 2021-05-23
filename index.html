@@ -6,8 +6,10 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+
     <header>
-      <h1>DEVICE</h1>
+      <img src="#" alt="логотип DEVICE" width="163.3" height="34.96">
+
       <form action="https://echo.htmlacademy.ru/courses" method="get">
         <input type="search" name="search" placeholder="Поиск по сайту">
       </form>
@@ -18,12 +20,29 @@
         <li><a href="blank.html">Корзина</a></li>
       </ul>
 
-      <p><a href="blank.html">каталог товаров</a></p>
-      <ul>
-        <li><a href="blank.html">доставка</a></li>
-        <li><a href="blank.html">гарантия</a></li>
-        <li><a href="blank.html">контакты</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="blank.html">каталог товаров 
+              <img src="#" alt="плюс">
+            </a>
+          </li>
+          <li><a href="blank.html">доставка</a></li>
+          <li><a href="blank.html">гарантия</a></li>
+          <li><a href="blank.html">контакты</a></li>
+        </ul>
+      </nav>
+
+      <section> <!-- выпадающее меню -->
+        <ul>
+          <li><a href="blank.html">Виртуальная реальность</a></li>
+          <li><a href="blank.html">Моноподы и селфи</a></li>
+          <li><a href="blank.html">Экшн-камеры</a></li>
+          <li><a href="blank.html">Фитнес-браслеты</a></li>
+          <li><a href="blank.html">Умные часы</a></li>
+          <li><a href="blank.html">Квадрокоптер</a></li>
+        </ul>
+      </section>
 
       <section>
         <div>
@@ -36,11 +55,11 @@
           <a href="#">Подробнее</a>
           <ul>
             <li>
-              <p>800<span>м</span></p>
+              <p>800 м</p>
               <p>дальность полета</p>
             </li>
             <li>
-              <p>50 <span>м</span></p>
+              <p>50 м</p>
               <p>радиус поражения</p>
             </li>
           </ul>
@@ -56,7 +75,7 @@
           <a href="#">Подробнее</a>
           <ul>
             <li>
-              <p>48<span>часов</span></p>
+              <p>48 часов</p>
               <p>без подзарядки</p>
             </li>
           </ul>
@@ -72,15 +91,15 @@
           <a href="#">Подробнее</a>
           <ul>
             <li>
-              <p>8,5<span>м</span></p>
+              <p>8,5 м</p>
               <p>Длина палки</p>
             </li>
             <li>
-              <p>5<span>кг</span></p>
+              <p>5 кг</p>
               <p>Вес палки</p>
             </li>
             <li>
-              <p><span>Карбон</span></p>
+              <p>Карбон</p>
               <p>Материал</p>
             </li>
           </ul>
@@ -211,17 +230,18 @@
       
       <footer>
         <div>
-          <h1>DEVICE</h1>
+          <img src="#" alt="логотип DEVICE" width="163.3" height="34.96">
           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </div>
         
-        <div>
+        <nav>
           <ul>
             <li><a href="blank.html">доставка</a></li>
             <li><a href="blank.html">гарантия</a></li>
             <li><a href="blank.html">контакты</a></li>
           </ul>
-
+        </nav>
+          
           <ul>
             <li>
               <a href="blank.html">
@@ -241,7 +261,6 @@
               </a>
             </li>
           </ul> 
-        </div>
 
         <div>
           <ul>
@@ -256,8 +275,29 @@
             <img src="#" alt="логотип html academy" width="115" height="33.03">
           </a>
         </div>
-
       </footer>
+
+      <section><!--Форма "Напишите нам"-->
+        <button><img src="#" alt="close"></button>
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <label>
+            <p>Ваше имя:</p>
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+
+          <label>
+            <p>Ваш e-mail:</p>
+            <input type="text" name="e-mail" placeholder="email@example.com">
+          </label>
+
+          <label>
+            <p>Текст письма:</p>
+            <textarea name="message" rows="10" placeholder="В свободной форме"></textarea>
+          </label>
+
+          <input type="submit" value="отправить">
+        </form>
+      </section>
 
   </body>
 </html>
