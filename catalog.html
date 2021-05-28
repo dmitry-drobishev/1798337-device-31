@@ -17,7 +17,7 @@
       </form>
 
       <ul>
-        <li><a href="blank.html">Алексей Петухов</a></li> 
+        <li><a href="blank.html">Валентин Петухов</a></li> 
         <li><a href="blank.html">Выйти</a></li>
         <li><a href="blank.html">Сравнить</a></li>
         <li><a href="blank.html">Корзина</a></li>
@@ -26,10 +26,10 @@
       <nav>
         <ul>
           <li>
-            <a href="blank.html">каталог товаров</a>
+            <a href="blank.html">Каталог товаров</a>
             <ul>
               <li><a href="blank.html">Виртуальная реальность</a></li>
-              <li><a>Моноподы и селфи</a></li>
+              <li><a>Моноподы для селфи</a></li>
               <li><a href="blank.html">Экшн-камеры</a></li>
               <li><a href="blank.html">Фитнес-браслеты</a></li>
               <li><a href="blank.html">Умные часы</a></li>
@@ -46,7 +46,7 @@
 
     <main>
 
-      <h1>Моноподы и селфи</h1>
+      <h1>Моноподы для селфи</h1>
 
       <nav>
         <ul>
@@ -72,42 +72,55 @@
 
             <h4>Цвет</h4>
 
-            <label>
-                <input type="checkbox" name="black" checked>
-                Черный
-            </label>
+            <ul>
 
-            <label>
-                <input type="checkbox" name="white">
-                Белый
-            </label>
+              <li>
+                <label for="blk">Черный</label>
+                <input type="checkbox" id="blk" name="black" checked>
+              </li>
 
-            <label>
-                <input type="checkbox" name="blue" checked>
-                Синий
-            </label>
+              <li>
+                <label for="wht">Белый</label>
+                <input type="checkbox" id="wht" name="white">
+              </li>
 
-            <label>
-                <input type="checkbox" name="red" checked>
-                Красный
-            </label>
+              <li>
+                <label for="blu">Синий</label>
+                <input type="checkbox" id="blu" name="blue" checked>
+              </li>
 
-            <label>
-                <input type="checkbox" name="pink">
-                Розовый
-            </label>
+              <li>
+                <label for="rd">Красный</label>
+                <input type="checkbox" id="rd" name="red" checked>
+              </li>
+
+              <li>
+                <label for="pnk">Розовый</label>
+                <input type="checkbox" id="pnk" name="pink">
+              </li>
+
+            </ul>
+            
           </div>
 
           <div>
-            <label>
-                <input type="radio" value="yes" name="bluetooth" checked>
-                Есть
-            </label>
 
-            <label>
-                <input type="radio" value="no" name="bluetooth">
-                Нет
-            </label>
+            <h4>Bluetooth</h4>
+
+            <ul>
+
+              <li>
+                <label for="yes">Есть</label>
+                <input type="radio" id="yes" value="yes" name="bluetooth" checked>
+              </li>
+
+              <li>
+                <label for="no">Нет</label>
+                <input type="radio" id="no" value="no" name="bluetooth">
+              </li>
+
+            </ul>
+                 
           </div>
 
           <button type="submit">Показать</button>
@@ -116,6 +129,7 @@
       </aside>
 
       <section>
+
         <h3>Сортировка:</h3>
         <ul>
           <li><a href="#">по цене</a></li>
@@ -124,8 +138,8 @@
         </ul>
 
         <ul>
-          <li><a href="#">Сортировать по возрастанию</a></li>
-          <li><a href="#">Сортировать по убыванию</a></li>
+          <li><a href="#">по возрастанию</a></li>
+          <li><a href="#">по убыванию</a></li>
         </ul>
       </section>
 
@@ -133,49 +147,59 @@
 
         <h2>Каталог моноподов</h2>
 
-        <div>
-          <h4>Любительская селфи-палка<span>1100 руб.</span></h4>
+        <section>
           <img src="https://via.placeholder.com/360x380" alt="">
-          <button type="submit">В корзину</button>
-          <button type="submit">Добавить к сравнению</button>
-        </div>
-
-        <div>
-          <h4>Профессиональная селфи-палка<span>1500 руб.</span></h4>
-          <img src="https://via.placeholder.com/360x380" alt="">
-          <button type="submit">В корзину</button>
-          <button type="submit">Добавить к сравнению</button>
-        </div>
-
-        <div>
-          <h4>Непотопляемая селфи-палка<span>1500 руб.</span></h4>
-          <img src="https://via.placeholder.com/360x380" alt="">
-          <button type="submit">В корзину</button>
-          <button type="submit">Добавить к сравнению</button>
-        </div>
-
-        <div>
-
-          <h4>Селфи-палка «Следуй за мной»<span>1900 руб.</span></h4>
-          <img src="https://via.placeholder.com/360x380" alt="">
-          <button type="submit">В корзину</button>
-          <button type="submit">Добавить к сравнению</button>
-        </div>
+          <div>
+            <button>В корзину</button>
+            <button>Добавить к сравнению</button>
+          </div>
+          <a href="blank.html"><h3>Любительская селфи-палка</h3></a>
+          <p>1100 руб.</p>
+        </section>
           
+
+        <section>
+          <img src="https://via.placeholder.com/360x380" alt="">
+          <div>
+            <button>В корзину</button>
+            <button>Добавить к сравнению</button>
+          </div>
+          <a href="blank.html"><h3>Профессиональная селфи-палка</h3></a>
+          <p>1500 руб.</p>
+        </section>
+          
+
+        <section>
+          <img src="https://via.placeholder.com/360x380" alt="">
+          <div>
+            <button>В корзину</button>
+            <button>Добавить к сравнению</button>
+          </div>
+          <a href="blank.html"><h3>Непотопляемая селфи-палка</h3></a>
+          <p>1500 руб.</p>
+        </section>
+          
+
+        <section>
+          <img src="https://via.placeholder.com/360x380" alt="">
+          <div>
+            <button>В корзину</button>
+            <button>Добавить к сравнению</button>
+          </div>
+          <a href="blank.html"><h3>Селфи-палка «Следуй за мной»</h3></a>
+          <p>1900 руб.</p>
+        </section>
+      
       </section>
 
-      <div>
-        <ul>
+      <ul>
           <li><a href="blank.html">Назад</a></li>
-          <li><a href="blank.html">Вперед</a></li>
-        </ul>
-      
-        <ul>
           <li><a>1</a></li>
-          <li><a href="hlank.html">2</a></li>
-          <li><a href="hlank.html">3</a></li>
-        </ul>
-      </div>
+          <li><a href="blank.html">2</a></li>
+          <li><a href="blank.html">3</a></li>
+          <li><a href="blank.html">Вперед</a></li>
+      </ul>
+      
 
     </main>
       
@@ -194,21 +218,21 @@
       
       <ul>
         <li>
-          <a href="#">Логотип facebook</a>
+          <a href="#">facebook</a>
         </li>
 
         <li>
-          <a href="#">Логотип instagtam</a>
+          <a href="#">instagram</a>
         </li>
 
         <li>
-          <a href="#">логотип twiter</a>
+          <a href="#">twitter</a>
         </li>
       </ul> 
 
       <div>
         <ul>
-          <li><a href="blank.html">Алексей Петухов</a></li> 
+          <li><a href="blank.html">Валентин Петухов</a></li> 
           <li><a href="blank.html">Выйти</a></li>
           <li><a href="blank.html">Сравнить</a></li>
           <li><a href="blank.html">Корзина</a></li>
