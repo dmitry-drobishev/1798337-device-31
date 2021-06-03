@@ -16,30 +16,33 @@
   font-family: "Gilroy";
   font-weight: 300;
   font-style: normal;
-  src: local("Gilroy"), url("gilroylight.woff") format("woff"),
-  url("gilroylight.woff2") format("woff2");
+  src: url("./fonts/gilroylight.woff") format("woff"),
+  url("./fonts/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Gilroy Bold";
+  font-family: "Gilroy Extra Bold";
   font-weight: 800;
   font-style: normal;
-  src: local("Gilroy Bold"), url("gilroyextrabold.woff") format("woff"),
-  url("gilroyextrabold.woff2") format("woff2");
+  src: local("Gilroy Extra Bold"), url("./fonts/gilroyextrabold.woff") format("woff"),
+  url("./fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
   font-style: normal;
-  src: local("Open Sans"), url("opensans.woff") format("woff"), url("opensans.woff2") format("woff2");
+  src: local("Open Sans"), url("./fonts/opensans.woff") format("woff"),
+   url("./fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Open Sans Light";
   font-weight: 300;
   font-style: normal;
-  src: local("Open Sans Light"), url("opensanslight.woff") format("woff"), url("opensanslight.woff2") format("woff2");
+  src: local("Open Sans Light"),
+   url("./fonts/opensanslight.woff") format("woff"),
+    url("./fonts/opensanslight.woff2") format("woff2");
 }
 
 .page-body {
@@ -51,27 +54,28 @@
   color: var(--basic-black);
 }
 
-/* a {
-  text-decoration: none;
-}*/
-
-/* img {
-  max-width: 100%;
-  height:auto;
-}*/
-
-/* .main-header-logo {} */
-
-/* .search {} */
-
 .main-header {
   background-color: var(--special-yellow);
+}
+
+.search {
+  background: none;
+  border:none
+}
+
+.search::placeholder {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.search:hover {
+  color:rgba(0, 0, 0, 0.6);
 }
 
 .search-button {
   font-weight: 300;
   line-height: 20px;
   text-transform: uppercase;
+  border: 2px solid var(--basic-black);
 }
 
 .search-button:hover {
@@ -99,13 +103,11 @@
   color: var(--basic-black);
 }
 
-
-
 .site-navigation-list {
-  font-family: "Gilroy Bold";
-  font-weight: 800;
+  font-family: "Gilroy Extra Bold";
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   list-style: none;
   text-decoration: none;
@@ -127,7 +129,7 @@
 
 .site-navigation-dropdown {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: 300;
+  letter-spacing: normal;
   font-size: 15px;
   line-height: 20px;
   text-transform: none;
@@ -135,29 +137,36 @@
 }
 
 .slider-number {
-font-family: "Gilroy";
+font-family: "Gilroy Extra Bold";
 font-weight: 800;
 font-size: 179px;
 line-height: 219px;
-text-transform: uppercase;
 }
 
-.button {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
+.link-box {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color:rgba(0, 0, 0, 1);;
   text-decoration: none;
+}
+
+.link-box:hover {
+  
+}
+
+.link-box:focus {
+  color:rgba(0, 0, 0, 0.3);
 }
 
 .services-list {
   list-style: none;
 }
 
-.slider-head {
-  font-family: "Gilroy", "Arial", sans-serif;
+.slider-title {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -175,11 +184,13 @@ text-transform: uppercase;
 .slider-specifications-value {
   font-size: 36px;
   line-height: 42px;
+  letter-spacing: 0.1em;
 }
 
 .slider-specifications-name {
   font-size: 13px;
   line-height: 15px;
+  letter-spacing: 0.1em;
 }
 
 .categories-list {
@@ -187,20 +198,21 @@ text-transform: uppercase;
 }
 
 .categories-link {
-  font-family: "Gilroy Bold", "Arial", sans-serif;
-  font-weight: 800;
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.05em;
   color: var(--basic-black);
   text-decoration: none;
 }
 
 .services-button {
-  font-family: "Gilroy Bold", "Arial", sans-serif;
-  font-weight: 800;
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  border: none;
 }
 
 .services-button:focus {
@@ -208,15 +220,56 @@ text-transform: uppercase;
   background-color: var(--basic-black);
 }
 
-.services-heading {
-  font-family: "Gilroy Bold", "Arial", sans-serif;
+.services-title {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
+  letter-spacing: 0.2em;
 }
 
+.services-info {
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
 
+.partners-list {
+  list-style: none;
+}
 
+.about-title {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.about-info { 
+  line-height: 28px;
+}
+
+.about-list {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contacts-title {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.contacts-info { 
+  line-height: 28px;
+}
+
+.contacts-list {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
 
 
 
@@ -227,8 +280,79 @@ text-transform: uppercase;
   background-color: var(--basic-dark);
 }
 
+.footer-address {
+  line-height: 20px;
+  color: var(--basic-white);
+}
 
+.footer-navigation-list {
+  font-family: "Gilroy Extra Bold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  list-style: none;
+}
 
+.footer-navigation-list a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
 
+.footer-navigation-list a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
 
+.footer-navigation-list a:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
 
+.footer-function-list {
+  line-height: 20px;
+  list-style: none;
+}
+
+.footer-function-list a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-function-list a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-function-list a:focus {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.phone {
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.modal-label {
+  font-family: "Gilroy Extra Bold";
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.modal-input {
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  outline: none;
+}
+
+.modal-input:hover {
+  background-color: rgba(234, 234, 234, 1);
+}
+
+.modal-input:focus {
+  background:none;
+  border: 2px solid#F7E296;
+}
