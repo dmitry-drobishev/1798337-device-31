@@ -360,3 +360,23 @@ line-height: 219px;
   background:none;
   border: 2px solid#F7E296;
 }
+
+.categories-content {
+  text-decoration: none;
+}
+
+.categories-virtual {
+  width: 160px;
+  height: 160px;
+  background-image: url("./img/popular/popular-1.svg");
+  background-color: var(--special-yellow);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.categories-title {
+  font-family: "Gilroy Extra Bold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+}
