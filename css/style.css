@@ -251,19 +251,18 @@ line-height: 219px;
   width: 160px;
   height: 160px;
   background-color: var(--special-yellow);
-  text-align: center;
-  line-height: 160px;
+  display:flex;
 }
 
 .categories-img {
-vertical-align: middle;
+margin:auto;
 }
 
-.categories-background:hover {
+.categories-item-link:hover .categories-background {
   background-color: var(--special-yellow-dark);
 }
 
-.categories-img:active{
+.categories-item-link:active .categories-img{
   opacity: 0.3;
 }
 
