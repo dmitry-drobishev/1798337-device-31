@@ -16,6 +16,10 @@
     --special-green: #91c92f;
     --special-pink: #f6dada;
 
+    --black-opacity-0-3:rgba(0, 0, 0, 0.3);
+    --black-opacity-0-6:rgba(0, 0, 0, 0.6);
+    --white-opacityt-0-3: rgba(255, 255, 255, 0.3);
+
 }
 
 @font-face {
@@ -86,15 +90,15 @@
 }
 
 .search::placeholder {
-  color:rgba(0, 0, 0, 0.3);
+  color: var(--black-opacity-0-3);
 }
 
 .search:hover::placeholder {
-  color:rgba(0, 0, 0, 0.6);
+  color: var(--black-opacity-0-6);
 }
 
 .search:focus {
-  color:rgba(0, 0, 0, 1);
+  color: var(--basic-black);
   border-bottom: 2px solid var(--basic-black);
   outline: none;
 }
@@ -113,7 +117,7 @@
 }
 
 .search-button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--white-opacityt-0-3);
   background-color: var(--basic-black);
 }
 
@@ -202,7 +206,7 @@ line-height: 219px;
 
 .button-link:not(.link-active):active {
   background-color: var(--special-yellow-dark);
-  color:rgba(0, 0, 0, 0.3);
+  color: var(--black-opacity-0-3);
 }
 
 .slide-title {
