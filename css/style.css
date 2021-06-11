@@ -4,20 +4,17 @@
     --basic-dark: #363636;
     --basic-grey: #464646;
     --basic-half-grey: #7e7e7e;
-    --basic-grey-light: #e5e5e5; d
-    --basic-grey-light: #D9D9D9;
-    --basic-grey-light: #EBEBEB; /* Color Hex Gray92 */
-    --basic-grey-light: #DCDCDC; /* gainsboro */
+    --basic-grey-light: #e5e5e5;
+    --basic-grey-light-2: #D9D9D9;
+    --basic-grey-light-3: #F2F2F2;
+    --basic-grey-light-4: #EAEAEA;
+    --basic-grey-92: #EBEBEB;
+    --basic-grey-gainsboro: #DCDCDC;
     --basic-white: #FFFFFF;
     --special-yellow-dark: #f0c52e;
     --special-yellow: #f7e296;
     --special-green: #91c92f;
     --special-pink: #f6dada;
-
-
-    /* #D9D9D9;
-    #EBEBEB;
-    #DCDCDC; */
 
 }
 
@@ -457,18 +454,18 @@ margin:auto;
   font-size: 14px;
   line-height: 19px;
   font-weight: 400;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: var(--basic-grey-light-3);
   border: 2px solid transparent;
   outline: none;
 }
 
 .modal-input:hover, .modal-textarea:hover {
-  background-color: rgba(234, 234, 234, 1);
+  background-color: var(--basic-grey-light-4);
 }
 
 .modal-input:focus, .modal-textarea:focus {
   background:none;
-  border: 2px solid #F7E296;
+  border: 2px solid var(--special-yellow);
 }
 
 /* catalog.html------------------------------------------------------------------------------------------------------- */
@@ -515,7 +512,7 @@ margin:auto;
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: #DCDCDC;
+  background-color: var(--basic-grey-gainsboro);
 }
 
 .filter-subtitle {
@@ -630,7 +627,7 @@ margin:auto;
 
 .pagination {
   list-style: none;
-  background-color: #EBEBEB;
+  background-color: var(--basic-grey-92);
 }
 
 .pagination-item a {
@@ -658,7 +655,7 @@ margin:auto;
 }
 
 .pagination-prev a:hover, .pagination-next a:hover {
-  background-color: #D9D9D9;
+  background-color: var(--basic-grey-light-2);
 }
 
 .pagination-prev a:active span, .pagination-next a:active span {
