@@ -57,7 +57,7 @@
   font-style: normal;
 }
 
-.title-none {
+.visually-hidden {
   display: none;
 }
 
@@ -66,9 +66,8 @@
 }
 
 .page-body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
-  padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -94,6 +93,7 @@
 }
 
 .main-header-logo img {
+  display: block;
   margin-top: -20px;
 }
 
@@ -107,7 +107,7 @@
 
 /* Search------------------------------------------------------------------------------------------------------------- */
 
-.header-functions-serch-wrapper {
+.header-functions-search-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 29px;
@@ -142,6 +142,7 @@
   background: none;
   text-transform: uppercase;
   border: 2px solid var(--basic-black);
+  padding: 0;
 }
 
 .search-button:hover {
@@ -229,7 +230,6 @@
 .main-wrapper {
   width: 1160px;
   margin: 0 auto;
-  padding: 0;
 }
 /* Slider------------------------------------------------------------------------------------------------------------- */
 
@@ -256,7 +256,7 @@
 }
 
 .slide-active {
-  display: grid
+  display: grid;
 }
 
 .slide img {
@@ -271,7 +271,6 @@ font-weight: 800;
 font-size: 179px;
 line-height: 170px;
 margin: 0;
-padding: 0;
 }
 
 .button-link {
@@ -286,6 +285,7 @@ padding: 0;
   text-decoration: none;
   border:none;
   background-color: transparent;
+  padding: 0;
 }
 
 .button-link:not(.link-active):hover {
@@ -304,13 +304,11 @@ padding: 0;
   line-height: 58px;
   margin: 0;
   margin-top: -60px;
-  padding: 0;
 }
 
 .slide-description {
   line-height: 20px;
   margin: 30px 0 60px 0;
-  padding: 0;
 }
 
 .slide-specifications {
@@ -322,7 +320,6 @@ padding: 0;
   list-style: none;
   margin: 0;
   margin-top: 64px;
-  padding: 0;
 }
 
 .slide-specifications-value {
@@ -330,7 +327,6 @@ padding: 0;
   line-height: 42px;
   letter-spacing: 0.1em;
   margin: 0;
-  padding: 0;
 }
 
 .slide-specifications-name {
@@ -339,14 +335,12 @@ padding: 0;
   letter-spacing: 0.1em;
   margin: 0;
   margin-top: 15px;
-  padding: 0;
 }
 
 /*Categories---------------------------------------------------------------------------------------------------------- */
 
 .categories {
   margin: 91px auto 0 auto;
-  padding: 0;
   outline: 5px solid rgb(255, 0, 0);
   outline-offset: -5px;
 
@@ -375,7 +369,6 @@ padding: 0;
   width: 160px;
   margin: 0;
   margin-top: 38px;
-  padding: 0;
 }
 
 .categories-background {
@@ -404,7 +397,6 @@ margin:auto;
   width: 100%;
   margin: 0;
   margin-top: 49px;
-  padding: 0;
   background-color: var(--basic-grey-light);
 
   outline: 5px solid rgb(255, 0, 0);
@@ -458,7 +450,6 @@ margin:auto;
   letter-spacing: 0.2em;
   margin: 0;
   margin-top: 86px;
-  padding: 0;
 }
 
 .services-info {
@@ -466,7 +457,6 @@ margin:auto;
   letter-spacing: 0.1em;
   margin: 0;
   margin-top: 40px;
-  padding: 0;
 }
 
 /*Partners------------------------------------------------------------------------------------------------------------ */
@@ -520,15 +510,12 @@ margin:auto;
   line-height: 58px;
   letter-spacing: 0.2em;
   margin: 50px 0 50px 0;
-  padding: 0;
 }
 
 .about-info {
   line-height: 28px;
   margin: 0;
   margin-bottom: 40px;
-  padding: 0;
-
 }
 
 .about-list {
@@ -544,7 +531,6 @@ margin:auto;
   line-height: 28px;
   height: 22px;
   margin: 0;
-  padding: 0;
 }
 
 .about-list li:not(:last-child) {
@@ -564,17 +550,16 @@ margin:auto;
   line-height: 58px;
   letter-spacing: 0.2em;
   margin: 50px 0 50px 0;
-  padding: 0;
 }
 
 .contacts-info {
   line-height: 28px;
   margin: 0;
   margin-bottom: 40px;
-  padding: 0;
 }
 
 .contacts img {
+  display: block;
   margin-bottom: 85px;
 }
 
@@ -598,12 +583,13 @@ margin:auto;
   outline-offset: -5px;
 }
 
-.footer-conteiner-left {
+.footer-container-left {
   outline: 5px solid red;
   outline-offset: -5px;
 }
 
 .main-footer-logo img {
+  display: block;
   margin-top: 64px;
 }
 
@@ -685,7 +671,7 @@ margin:auto;
 /* footer-function--------------------------------------------------------------------------------------------------- */
 
 
-.footer-conteiner-right {
+.footer-container-right {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   justify-content: end;
