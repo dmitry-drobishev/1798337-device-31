@@ -35,20 +35,29 @@
 
       <nav class="site-navigation">
         <ul class="site-navigation-list">
-          <li class="site-navigation-catalog">
+          <li class="site-navigation-item site-navigation-catalog">
             <a class="site-navigation-catalog-link" href="blank.html">каталог товаров</a>
+            
             <ul class="site-navigation-inner">
-              <li><a href="blank.html">Виртуальная реальность</a></li>
-              <li><a href="blank.html">Фитнес-браслеты</a></li>
-              <li><a href="blank.html">Квадрокоптер</a></li>
-              <li><a href="blank.html">Моноподы для селфи</a></li>
-              <li><a href="blank.html">Умные часы</a></li>
-              <li><a href="blank.html">Экшн-камеры</a></li>
+              <ul class="site-navigation-inner-list">
+                <li><a href="blank.html">Виртуальная реальность</a></li>
+                <li><a href="blank.html">Моноподы для селфи</a></li>
+                <li><a href="blank.html">Экшн-камеры</a></li>
+              </ul>
+
+              <ul class="site-navigation-inner-list">
+                <li><a href="blank.html">Фитнес-браслеты</a></li>
+                <li><a href="blank.html">Умные часы</a></li>
+              </ul>
+
+              <ul class="site-navigation-inner-list">
+                <li><a href="blank.html">Квадрокоптер</a></li>
+              </ul>
             </ul>
           </li>
-          <li><a href="blank.html">доставка</a></li>
-          <li><a href="blank.html">гарантия</a></li>
-          <li><a href="blank.html">контакты</a></li>
+          <li class="site-navigation-item"><a href="blank.html">доставка</a></li>
+          <li class="site-navigation-item"><a href="blank.html">гарантия</a></li>
+          <li class="site-navigation-item"><a href="blank.html">контакты</a></li>
         </ul>
       </nav>
 
@@ -70,12 +79,12 @@
             <li><button>слайд 3</button></li>
           </ul>
 
-          <section class="slide slide-active">
+          <section class="slide slide-active slide-quadrotor">
             <img src="img/slider/slide-3.png" width="526" height="334" alt="квадрокоптер">
             <div class="slide-container-wrapper">
               <p class="slide-number">01</p>
               <h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
-              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="button-link" href="blank.html">Подробнее</a>
 
               <ul class="slide-specifications">
@@ -92,12 +101,12 @@
 
           </section>
 
-          <section class="slide">
+          <section class="slide slide-braslet">
             <img src="img/slider/slide-2.png" width="345" height="485" alt="фитнес-браслет">
             <div class="slide-container-wrapper">
               <p class="slide-number">02</p>
-              <h3 class="slide-title">Худеем правильно!</h3>
-              <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <h3 class="slide-title">Худеем <br> правильно!</h3>
+              <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не пропускать занятия и соблюдать диету.</p>
               <a class="button-link" href="blank.html">Подробнее</a>
 
               <ul class="slide-specifications">
@@ -109,12 +118,12 @@
             </div>
           </section>
 
-          <section class="slide">
+          <section class="slide slide-stick">
             <img src="img/slider/slide-1.png" width="384" height="486" alt="селфи палка">
-            <div class="slide-information-wrapper">
+            <div class="slide-container-wrapper">
               <p class="slide-number">03</p>
               <h3 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h3>
-              <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a class="button-link" href="blank.html">Подробнее</a>
 
               <ul class="slide-specifications">
@@ -213,28 +222,28 @@
 
           <div class="services-container">
 
-            <div class="service-content service-active">
+            <div class="service-content service-active tab-delivery">
               <div class="service-content-container">
                 <h3 class="services-title">Доставка</h3>
-                <p class="services-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <p class="services-info">Мы с удовольствием доставим ваш товар прямо к вашему <br> подъезду совершенно бесплатно! Ведь мы неплохо <br> заработаем, поднимая его на ваш этаж.</p>
               </div>
 
 
               <img src="./img/services/delivery.svg" width="136" height="164" alt="человечек бежит с посылкой">
             </div>
 
-            <div class="service-content">
+            <div class="service-content tab-warranty">
               <div class="service-content-container">
                 <h3 class="services-title">Гарантия</h3>
-                <p class="services-info">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+                <p class="services-info">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
               </div>
               <img src="./img/services/warranty.svg" width="171" height="195" alt="звонок в службу поддержки">
             </div>
 
-            <div class="service-content">
+            <div class="service-content tab-credit">
               <div class="service-content-container">
                 <h3 class="services-title">Кредит</h3>
-                <p class="services-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                <p class="services-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
               </div>
               <img src="./img/services/credit.svg" width="156" height="188" alt="человечек бежит с банковской картой">
             </div>
