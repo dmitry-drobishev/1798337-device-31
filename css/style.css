@@ -315,10 +315,8 @@
   display: grid;
   grid-template-columns: fit-content(60%) fit-content(50%) fit-content(50%);
   column-gap: 60px;
-  list-style: none;
   margin: 0;
   margin-top: 30px;
-  padding: 0;
 }
 
 .site-navigation-inner-list {
@@ -334,7 +332,6 @@
 .site-navigation-inner-list li:last-child {
   margin-bottom: 46px;
 }
-
 
 .site-navigation-inner a {
   display: block;
@@ -1254,24 +1251,19 @@ margin-right: 47px;
   outline-offset: -2px;
 }
 
-.sort-controls-increace {
+.sort-controls-item {
   display: block;
   width: 18px;
   height: 18px;
-  background-image: url(../img/icons/icon_up.svg);
-  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.sort-controls-increase {
+  background: url(../img/icons/icon_up.svg) no-repeat;
 }
 
 .sort-controls-decrease {
-  display: block;
-  width: 18px;
-  height: 18px;
-  background-image: url(../img/icons/icon_down.svg);
-  background-repeat: no-repeat;
-}
-
-.sort-controls-item {
-  opacity: 0.2;
+  background: url(../img/icons/icon_down.svg) no-repeat;
 }
 
 .sort-controls-item:not(.sort-controls-active):hover {
