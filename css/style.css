@@ -12,6 +12,7 @@
     --basic-grey-gainsboro: #DCDCDC;
     --basic-white: #FFFFFF;
     --special-yellow-dark: #f0c52e;
+    --special-yellow-extra-dark: #FFC600;
     --special-yellow: #f7e296;
     --special-green: #91c92f;
     --special-pink: #f6dada;
@@ -398,14 +399,15 @@
   display: flex;
   gap: 18px;
   position: absolute;
-  top: 330px;
-  left: 1000px;
+  top: 357px;
+  left: 1002px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .slider-button {
+  display: flex;
   position: relative;
   width: 12px;
   height: 12px;
@@ -416,6 +418,11 @@
   margin: 0;
   cursor: pointer;
 }
+
+/* .current-slide.slider-button_active {
+  background: transparent;
+  border: 1px solid red;
+} */
 
 .current-slide.slider-button::after {
   content: "";
@@ -505,7 +512,7 @@
   border:none;
   background-color: transparent;
   padding: 9px 0 9px 0;
-  background-image: linear-gradient(to bottom, transparent 40%, #F0C52E 40%,  #F0C52E 60%, transparent 60%, transparent 100%);
+  background-image: linear-gradient(to bottom, transparent 16px, #F0C52E 16px,  #F0C52E 24px, transparent 24px, transparent 40px);
 }
 
 .button-link:not(.link-active):hover {
@@ -544,7 +551,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 64px;
+  margin-top: 55px;
 }
 
 .slide-specifications-value {
@@ -625,8 +632,8 @@
   margin-top: 49px;
   background-color: var(--basic-grey-light);
 
-  outline: 2px solid rgb(255, 0, 0);
-  outline-offset: -2px;
+  /* outline: 2px solid rgb(255, 0, 0);
+  outline-offset: -2px; */
 }
 
 .services-wrapper {
@@ -635,18 +642,19 @@
   width: 1160px;
   margin: 0 auto;
 
-  outline: 5px solid blue;
-  outline-offset: -5px;
+  /* outline: 5px solid blue;
+  outline-offset: -5px; */
 }
 
 
 .service-content {
-  display: grid;
+  display: none;
   grid-template-columns: 574px 1fr;
   margin-left: 116px;
   min-height: 403px;
-  outline: 2px solid lightblue;
-  outline-offset: -2px;
+
+  /* outline: 2px solid lightblue;
+  outline-offset: -2px; */
 }
 
 .service-active {
@@ -660,8 +668,8 @@
   margin: 0;
   padding-top: 95px;
 
-  outline: 2px solid lightblue;
-  outline-offset: -2px;
+  /* outline: 2px solid lightblue;
+  outline-offset: -2px; */
 }
 
 .services-list::after {
@@ -737,8 +745,9 @@
 .partners {
 
   margin-top: 90px;
-  outline: 2px solid red;
-  outline-offset: -2px;
+
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .partners-list {
@@ -766,16 +775,16 @@
   gap: 127px;
   margin: 90px 0 86px 0;
 
-  outline: 2px solid greenyellow;
-  outline-offset: -2px;
+  /* outline: 2px solid greenyellow;
+  outline-offset: -2px; */
 }
 
 .about {
   position: relative;
   width: 473px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .about-title {
@@ -823,14 +832,18 @@
   background-color: var(--basic-black);
 }
 
+.about-contacts-button {
+  width: 260px;
+}
+
 /* contacts----------------------------------------------------------------------------------------------------------- */
 
 .contacts {
   position: relative;
   width: 560px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .contacts-title {
@@ -872,15 +885,15 @@
   grid-template-columns: 33.3% 33.3% 33.3%;
   justify-content: space-between;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .footer-container-left {
   position: relative;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .footer-container-left::before {
@@ -889,7 +902,7 @@
   top: 239px;
   width: 80px;
   height: 7px;
-  background-color: var(--special-yellow-dark);
+  background-color: var(--special-yellow-extra-dark);
 }
 
 .main-footer-logo img {
@@ -917,8 +930,8 @@
   padding: 0;
   list-style: none;
 
-  outline: 2px solid pink;
-  outline-offset: -2px;
+  /* outline: 2px solid pink;
+  outline-offset: -2px; */
 }
 
 .social-list path {
@@ -959,8 +972,8 @@
   padding: 0;
   list-style: none;
 
-  outline: 2px solid pink;
-  outline-offset: -2px;
+  /* outline: 2px solid pink;
+  outline-offset: -2px; */
 }
 
 .footer-navigation-list a {
@@ -990,8 +1003,8 @@
   flex-direction: column;
   align-items: flex-end;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .footer-functions-list {
@@ -1003,8 +1016,8 @@
   padding: 0;
   list-style: none;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .footer-functions-list a {
@@ -1085,15 +1098,15 @@
   color: var(--basic-white);
   text-decoration: none;
   margin-top: 73px;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .academy-logo {
   margin-top: 68px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 
