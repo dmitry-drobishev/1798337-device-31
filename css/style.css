@@ -122,6 +122,7 @@
 
 .header-functions-search-wrapper {
   display: flex;
+  margin: 0;
   margin-top: 14px;
 }
 
@@ -172,7 +173,6 @@
   line-height: 20px;
   background: none;
   text-transform: uppercase;
-  border: 2px solid var(--basic-black);
   padding: 15px 17px;
 }
 
@@ -1168,8 +1168,8 @@
   line-height: 58px;
   margin: 44px 0 0 60px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 /* breadcrumbs-------------------------------------------------------------------------------------------------------- */
@@ -1180,8 +1180,8 @@
   padding: 0;
   margin: 30px 0 0 60px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .breadcrumbs-list li {
@@ -1233,21 +1233,21 @@
   grid-template-columns: 328px 832px;
   margin: 50px auto 0 auto;
 
-  outline: 2px solid green;
-  outline-offset: -2px;
+  /* outline: 2px solid green;
+  outline-offset: -2px; */
 }
 
 .filter {
   background-color: var(--basic-grey-light);
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
-.filter-container {
+/* .filter-container {
   outline: 2px solid yellow;
   outline-offset: -2px;
-}
+} */
 
 .filter-title {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1274,6 +1274,58 @@
 .filter-label {
   font-size: 14px;
   line-height: 19px;
+  padding-left: 42px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/icons/icon_check.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: var(--basic-black);
 }
 
 .filter-form {
@@ -1318,8 +1370,8 @@
   align-items: baseline;
   background-color: var(--basic-grey-light);
 
-  outline: 2px solid blue;
-  outline-offset: -2px;
+  /* outline: 2px solid blue;
+  outline-offset: -2px; */
 }
 
 .sort-title {
@@ -1332,8 +1384,8 @@
   margin: 0 74px 0 72px;
   padding: 25px 0 25px 0;
 
-  outline: 2px solid blueviolet;
-  outline-offset: -2px;
+  /* outline: 2px solid blueviolet;
+  outline-offset: -2px; */
 }
 
 .sort-list {
@@ -1343,8 +1395,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  outline: 2px solid blueviolet;
-  outline-offset: -2px;
+  /* outline: 2px solid blueviolet;
+  outline-offset: -2px; */
 }
 
 .sort-list a {
@@ -1371,8 +1423,8 @@
   margin-left: auto;
   padding: 0;
 
-  outline: 2px solid blueviolet;
-  outline-offset: -2px;
+  /* outline: 2px solid blueviolet;
+  outline-offset: -2px; */
 }
 
 .sort-controls-item {
@@ -1414,8 +1466,8 @@
   margin: 0;
   position: relative;
 
-  outline: 2px solid lightblue;
-  outline-offset: -2px;
+  /* outline: 2px solid lightblue;
+  outline-offset: -2px; */
 }
 
 .catalog-item img {
@@ -1472,11 +1524,15 @@
 .buttons-container {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   position: absolute;
   top: 180px;
   margin: 0;
+}
 
+.catalog-button {
+  width: 200px;
 }
 
 /* compare-button--------------------------------------------------------------------------------------------------- */
@@ -1511,8 +1567,8 @@
   list-style: none;
   background-color: var(--basic-grey-92);
 
-  outline: 2px solid blueviolet;
-  outline-offset: -2px;
+  /* outline: 2px solid blueviolet;
+  outline-offset: -2px; */
 }
 
 .pagination-item a {
