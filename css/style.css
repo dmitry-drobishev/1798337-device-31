@@ -1227,12 +1227,27 @@
 
 /* filter------------------------------------------------------------------------------------------------------------- */
 
+.temp-container {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.temp-container::before {
+  content: "";
+  height: 100%;
+  width: calc(100% / 2 - 1160px / 2);
+  background-image: linear-gradient(to bottom, var(--basic-grey-gainsboro) 70px, var(--basic-grey-light) 70px, var(--basic-grey-light) 100%);
+  position: absolute;
+}
+
+
 .filter-catalog-wrapper {
   width: 1160px;
   display: grid;
   grid-template-columns: 328px 832px;
   margin: 50px auto 0 auto;
-
+  position: relative;
   /* outline: 2px solid green;
   outline-offset: -2px; */
 }
@@ -1243,6 +1258,17 @@
   /* outline: 2px solid red;
   outline-offset: -2px; */
 }
+
+/* .filter-catalog-wrapper::before {
+  content: "";
+  height:100px;
+  width: calc(100% / 2 - 1160px / 2);
+  background-color: var(--basic-black);
+  position: absolute;
+
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
+
 
 /* .filter-container {
   outline: 2px solid yellow;
@@ -1361,6 +1387,74 @@
 
 .filter-form .button-link {
   margin-top: 50px;
+}
+
+.range-filter {
+  width: 200px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+  height: 20px;
+  box-sizing: border-box;
+  padding-top: 9px;
+  margin-bottom: 8px;
+
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--black-opacity-0-3);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--special-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+}
+
+.price-controls label {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 14px;
+}
+
+.price-controls input {
+  width: 60px;;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* sort-------------------------------------------------------------------------------------------------------------- */

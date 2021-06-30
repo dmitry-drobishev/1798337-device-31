@@ -78,7 +78,8 @@
         </ul>
       </nav>
       </div>
-
+    
+    <div class="temp-container">
       <div class="filter-catalog-wrapper">
 
         <aside class="filter">
@@ -91,7 +92,24 @@
 
               <div class="form-block">
                 <h4 class="filter-subtitle">Стоимость</h4>
-                <input type="range" min="0" max="8000" value="0" step="100">
+
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="width: 50%; margin-left: 0%"></div>
+                    </div>
+                    <div class="toggle toggle-min" style="left: 0%" tabindex="0"></div>
+                    <div class="toggle toggle-max" style="left: 50%" tabindex="0"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="15000">
+                    </label>
+                  </div>
+                </div>
               </div>
 
               <div class="form-block">
@@ -251,6 +269,8 @@
           </ul>
         </div>
       </div>
+    </div>
+      
 
     </main>
 
