@@ -99,10 +99,15 @@
   box-sizing: border-box;
   margin: 40px auto 0px auto;
   padding: 0 60px;
+
   background-color: var(--special-yellow);
 
   /* outline: 2px solid green;
   outline-offset: -2px; */
+}
+
+.catalog-main-header {
+  min-height: 186px;
 }
 
 .main-header-logo img {
@@ -124,6 +129,7 @@
   display: flex;
   margin: 0;
   margin-top: 14px;
+  
 }
 
 .search-wrapper {
@@ -298,14 +304,12 @@
   position: relative;
 }
 
-
-
-.site-navigation-item:last-child {
+.site-navigation-list li:last-child {
   margin-right: 0;
   margin-left: auto;
 }
 
-.site-navigation-item:nth-last-child(2) {
+.site-navigation-list li:nth-last-child(2) {
   margin-right: auto;
   margin-left: 36px;
 }
@@ -322,8 +326,8 @@
 }
 
  .site-navigation-catalog {
-
    width: 540px;
+
    /* outline: 2px solid greenyellow;
    outline-offset: -2px; */
 }
@@ -331,6 +335,7 @@
  .site-navigation-catalog-link {
    position: relative;
  }
+
  .site-navigation-catalog-link::after {
   content: "";
   position: absolute;
@@ -342,23 +347,29 @@
   background-position: 0 0;
 }
 
-.site-navigation-list a:hover {
+.site-navigation-list a:hover, .site-navigation-inner-list a:hover {
   color: var(--black-opacity-0-6);
 }
 
-.site-navigation-list a:active, .header-functions a:not(.header-functions-exit):active {
+.site-navigation-list a:active, .header-functions a:not(.header-functions-exit):active, .site-navigation-inner-list a:active{
   color: var(--black-opacity-0-3);
 }
 
 .site-navigation-inner {
+  width: 1160px;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: fit-content(60%) fit-content(50%) fit-content(50%);
   column-gap: 60px;
   margin: 0;
   margin-top: 30px;
   position: absolute;
-  /* display: none;   */
-  /* ACTIVE INNER */
+  left: -60px;
+  padding-left: 60px;
+  background-color: #91c92f;
+  background-color: var(--special-yellow);
+  z-index: 10;
+  display: none; /* ACTIVE INNER */
 }
 
 .site-navigation-inner-list {
@@ -380,9 +391,11 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   letter-spacing: normal;
+  color: var(--basic-black);
   font-size: 15px;
   line-height: 20px;
   text-transform: none;
+  text-decoration: none;
 }
 
 
