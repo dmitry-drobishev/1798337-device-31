@@ -207,6 +207,13 @@
   pointer-events: auto;
 }
 
+.search-button:focus {
+  opacity: 1;
+  pointer-events: auto;
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
+
 /* header-functions---------------------------------------------------------------------------------------------------- */
 
 .header-functions {
@@ -377,18 +384,23 @@
   left: -60px;
   background-color: var(--special-yellow);
   z-index: 10;
-  display: none;
+  /* display: none; */
+  display: grid;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .site-navigation-catalog:hover .site-navigation-inner {
-  display: grid;
+  /* display: grid; */
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .site-navigation-catalog:focus .site-navigation-inner {
-  display: grid;
+  /* display: grid; */
+  opacity: 1;
+  pointer-events: auto;
 }
-
-
 
 .site-navigation-inner-list {
   list-style: none;
@@ -1599,10 +1611,8 @@
   background-color: var(--basic-grey-92);
 }
 
-.pagination-item button {
-  /* display: block; */
-  border: none;
-  background-color: transparent;
+.pagination-item a {
+  display: block;
   padding: 25px 15px 25px 14px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -1611,14 +1621,13 @@
   letter-spacing: 0.1em;
   color: var(--basic-black);
   opacity: 0.3;
-  /* text-decoration: none; */
+  text-decoration: none;
   cursor: pointer;
 }
 
 .pagination-next {
   margin-left: auto;
   margin-right: 0;
-
 }
 
 .pagination-prev {
@@ -1627,7 +1636,7 @@
 }
 
 
-.pagination-prev button, .pagination-next button {
+.pagination-prev a, .pagination-next a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding-right: 30px;
@@ -1635,27 +1644,27 @@
   opacity: 1;
 }
 
-.pagination-item:not(.pagination-prev, .pagination-next) button {
+.pagination-item:not(.pagination-prev, .pagination-next) a {
   position: relative;
   left: 5px;
 }
 
 .pagination-item:not(.pagination-prev,
-.pagination-next) button:not(.pagination-button-active):hover {
+.pagination-next) a:not(.pagination-link-active):hover {
   opacity: 0.6;
 }
 
-.pagination-item .pagination-button-active {
+.pagination-item .pagination-link-active {
   opacity: 1;
 }
 
-.pagination-prev button:hover,
-.pagination-next button:hover {
+.pagination-prev a:hover,
+.pagination-next a:hover {
   background-color: var(--basic-grey-light-2);
 }
 
-.pagination-prev button:active,
-.pagination-next button:active {
+.pagination-prev a:active,
+.pagination-next a:active {
   color: var(--black-opacity-0-3);
 }
 
