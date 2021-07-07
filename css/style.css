@@ -8,6 +8,7 @@
     --basic-grey-light-2: #D9D9D9;
     --basic-grey-light-3: #F2F2F2;
     --basic-grey-light-4: #EAEAEA;
+    --basic-grey-light-5: #C4C4C4;
     --basic-grey-92: #EBEBEB;
     --basic-grey-gainsboro: #DCDCDC;
     --basic-white: #FFFFFF;
@@ -21,9 +22,11 @@
     --special-green: #91c92f;
     --special-pink: #f6dada;
 
+    --black-opacity-0-2: rgba(0, 0, 0, 0.2);
     --black-opacity-0-3: rgba(0, 0, 0, 0.3);
     --black-opacity-0-6: rgba(0, 0, 0, 0.6);
     --black-opacity-0-15: rgba(0, 0, 0, 0.15);
+    --black-opacity-0-18: rgba(0, 0, 0, 0.18);
 
     --white-opacityt-0-3: rgba(255, 255, 255, 0.3);
     --white-opacityt-0-7: rgba(255, 255, 255, 0.7);
@@ -458,7 +461,7 @@
   height: 12px;
   box-sizing: border-box;
   background: transparent;
-  border: 1px solid #000000;
+  border: 1px solid var(--basic-black);
   border-radius: 50%;
   padding: 0;
   margin: 0;
@@ -469,7 +472,7 @@
   content: "";
   width: 6px;
   height: 6px;
-  border: 1px solid #000000;
+  border: 1px solid var(--basic-black);
   box-sizing: border-box;
   border-radius: 50%;
 }
@@ -536,7 +539,7 @@
   border:none;
   background-color: transparent;
   padding: 9px 0 9px 0;
-  background-image: linear-gradient(to bottom, transparent 16px, #F0C52E 16px,  #F0C52E 24px, transparent 24px, transparent 40px);
+  background-image: linear-gradient(to bottom, transparent 16px, var(--special-yellow-dark) 16px, var(--special-yellow-dark) 24px, transparent 24px, transparent 40px);
 }
 
 .button-link:not(.services-link-active):hover {
@@ -1254,7 +1257,7 @@
   height: 24px;
   border-radius: 2px;
   box-sizing: border-box;
-  border: 2px solid #000000;
+  border: 2px solid var(--basic-black);
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1278,7 +1281,7 @@
   height: 24px;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 2px solid #000000;
+  border: 2px solid var(--basic-black);
 }
 
 .filter-input-radio:checked + label::after {
@@ -1342,7 +1345,7 @@
 
 .range-controls .scale {
   height: 2px;
-  background: var(--black-opacity-0-3);
+  background: var(--black-opacity-0-2);
 }
 
 .range-controls .bar {
@@ -1360,9 +1363,9 @@
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #C4C4C4;
+  background-color: var(--basic-grey-light-5);
   border-radius: 50%;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 2px 2px var(--black-opacity-0-18);
   cursor: pointer;
 }
 
@@ -1560,6 +1563,11 @@
   margin: 0;
   opacity: 0;
   pointer-events: none;
+}
+
+.buttons-container:focus-within {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .catalog-item:hover .buttons-container {
