@@ -32,7 +32,6 @@
     --white-opacityt-0-3: rgba(255, 255, 255, 0.3);
     --white-opacityt-0-7: rgba(255, 255, 255, 0.7);
     --white-opacityt-0-1: rgba(255, 255, 255, 0.1);
-
 }
 
 @font-face {
@@ -1289,6 +1288,12 @@
   border: 2px solid var(--basic-black);
 }
 
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label::after,
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label::after {
+  opacity: 0.25;
+}
 
 .filter-input-radio:disabled + label::before,
 .filter-input-radio:disabled + label::after,
