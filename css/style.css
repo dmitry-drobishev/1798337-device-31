@@ -1114,7 +1114,6 @@
   margin-top: 68px;
 }
 
-
 .academy-logo:hover {
   opacity: 0.6;
 }
@@ -1295,16 +1294,30 @@
   opacity: 0.25;
 }
 
-.filter-input-radio:disabled + label::before,
-.filter-input-radio:disabled + label::after,
-.filter-input-checkbox:disabled + label::before,
-.filter-input-checkbox:disabled + label::after {
-  opacity: 0.25;
-}
-
 .filter-input-radio:disabled + label,
 .filter-input-checkbox:disabled + label {
   color: var(--basic-grey-light-6);
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:hover + label::after,
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:hover + label::after {
+  opacity: 0.6;
+}
+
+.filter-input-radio:focus + label::before,
+.filter-input-radio:focus + label::after,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after {
+  opacity: 0.6;
+}
+
+.filter-input-radio:active + label::before,
+.filter-input-radio:active + label::after,
+.filter-input-checkbox:active + label::before,
+.filter-input-checkbox:active + label::after {
+  opacity: 1;
 }
 
 .filter-input-radio:checked + label::after {
