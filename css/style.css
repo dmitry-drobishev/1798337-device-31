@@ -607,6 +607,7 @@
 
 .categories-list {
   display: flex;
+  flex-wrap: wrap;
   grid-template-columns:repeat(6, 160px);
   gap: 40px;
   list-style: none;
