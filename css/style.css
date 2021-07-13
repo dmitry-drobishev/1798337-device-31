@@ -549,7 +549,7 @@
   background-color: var(--special-yellow-dark);
 }
 
-.button-link:not(.link-active):active {
+.button-link:not(.services-link-active):active {
   background-color: var(--special-yellow-dark);
   color: var(--black-opacity-0-3);
 }
