@@ -223,6 +223,7 @@
 
 .header-functions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 500px;
   box-sizing:border-box;
@@ -505,7 +506,7 @@
   width: 345px;
   height: 485px;
   margin-top: 43px;
-  margin-left: 27px;
+  margin-left: 116px;
 }
 
 .slide-stick img {
@@ -513,6 +514,7 @@
   width: 384px;
   height: 486px;
   margin-top: 17px;
+  margin-left: 89px;
 }
 
 .slide-number {
@@ -597,12 +599,13 @@
   letter-spacing: 0.1em;
   margin: 0;
   margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 /*Categories---------------------------------------------------------------------------------------------------------- */
 
 .categories {
-  margin: 115px auto 0 auto;
+  margin: 95px auto 0 auto;
 }
 
 .categories-list {
@@ -1015,6 +1018,7 @@
 
 .footer-functions-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   width: 500px;
   margin: 0;
@@ -1138,6 +1142,7 @@
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 30px 0 0 60px;
@@ -1484,6 +1489,7 @@
 
 .sort {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   background-color: var(--basic-grey-light);
   position: relative;
