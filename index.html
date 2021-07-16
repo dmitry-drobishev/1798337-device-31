@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <link rel="stylesheet" href="./css/normalize.min.css">
-    <link rel="stylesheet" href="./css/style.min.css">   
+    <link rel="stylesheet" href="./css/style.css">   
     <link rel="icon" href="favicon.ico">
 
     <meta charset="utf-8">
@@ -76,17 +76,17 @@
 
           <ul class="slider-buttons-list">
             <li>
-              <button class="slider-button">
+              <button class="slider-button slider-button-1">
                 <span class="visually-hidden">слайд 1</span>
               </button>
             </li>
             <li>
-              <button class="slider-button">
+              <button class="slider-button slider-button-2">
                 <span class="visually-hidden">слайд 2</span>
               </button>
             </li>
             <li>
-              <button class="current-slide slider-button" tabindex="-1">
+              <button class="current-slide slider-button slider-button-3" tabindex="-1">
                 <span class="visually-hidden">слайд 3</span>
               </button>
             </li>
@@ -313,10 +313,11 @@
             <h3 class="contacts-title">Контакты</h3>
 
             <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="https://goo.gl/maps/65jrqqsE4Jvy3L3J9" target="_blank">
+
+            <a class="button-map" href="https://goo.gl/maps/65jrqqsE4Jvy3L3J9">
               <img src="img/map1.png" width="560" height="222" alt=" Адрес магазина: Санкт-Петербург, набережная реки Карповки, 5, литера П.">
             </a>
-            <a class="button-link about-contacts-button" href="blank.html">Напишите нам</a>
+            <a class="button-link about-contacts-button feedback-button" href="blank.html">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -396,7 +397,7 @@
     <section class="modal modal-message">
       <h2 class="visually-hidden">Форма для сообщения</h2>
       <button  class="modal-close" type="button" aria-label="Закрыть"></button>
-      <form class="modal-form" action="https://echo.htmlacademy.ru/courses" method="get">
+      <form class="modal-form" action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
 
         <div class="modal-name">
           <label class="modal-label" for="name">Ваше имя:</label>
@@ -423,5 +424,8 @@
       <button  class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 
+    <script src="./js/map.js"></script>
+    <script src="./js/feedback.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

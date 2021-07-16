@@ -1784,7 +1784,8 @@
   margin: 0;
 }
 
-.modal-form input:invalid {
+.modal-form input:invalid,
+.modal-form textarea:invalid {
   background-color: var(--special-pink);
   border: 2px solid transparent;
 }
@@ -1841,7 +1842,6 @@
 .modal-map {
   width: 960px;
   height: 572px;
-
   display: none;
 }
 
@@ -1878,4 +1878,29 @@
 
 .modal-close:active {
   background-color: var(--special-yellow-dark-opacity-0-3);
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
