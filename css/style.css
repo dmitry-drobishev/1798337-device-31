@@ -1489,7 +1489,6 @@
 
 .sort {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
   background-color: var(--basic-grey-light);
   position: relative;
@@ -1769,6 +1768,7 @@
 
 .modal-message {
   bottom: auto;
+  top: 120px;
   width: 960px;
   box-sizing: border-box;
   background-color: var(--basic-white);
